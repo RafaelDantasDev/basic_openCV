@@ -19,7 +19,6 @@ cv.imshow('Canny', canny)
 # ret, thresh = cv.threshold(gray, 125, 255, cv.THRESH_BINARY)
 # cv.imshow('Thresh', thresh)
 
-
 contours, hierarchies = cv.findContours(canny, cv.RETR_LIST, cv.CHAIN_APPROX_NONE)
 print(f'{len(contours)} contour(s) found!')
 
